@@ -1,27 +1,24 @@
 package com.bridgelabz.findmaximumproblemusinggenerics;
 
-//Given 3 integers find the maximum numbers 
+//Given 3 floats find the maximum numbers 
 
 public class MaximumNumber {
 
-	public void maxNumber(int a, int b, int c) {
-
-		int max = a;
-
-		if (Integer.compare(b, max) > 0) {
-			max = b;
+	public void floatMax(double d, double e, double f) {
+		Double max = d;
+		if (Double.compare(e, max) > 0.0) {
+			max = e;
 		}
-		if (Integer.compare(c, max) > 0) {
-			max = c;
+		if (Double.compare(f, max) > 0.0) {
+			max = f;
 		}
-		System.out.println("Maximum Number: " + max);
-
+		System.out.println(max);
 	}
 
 	public static void main(String[] args) {
 
 		MaximumNumber maximumNumber = new MaximumNumber();
-		maximumNumber.maxNumber(20, 130, 10);
+		maximumNumber.floatMax(2.2, 25.8, 100.08);
 	}
 
 }
